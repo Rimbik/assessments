@@ -40,7 +40,7 @@
 - **High-end Test:**  
   - Q4_K model on a Ryzen i7 Mini PC (32 GB RAM)  
 - **Edge Test:**  
-  - Q2_K model on Linux Mint (Celeron + 2GB RAM)  
+  - Q2_K model on Linux Mint (Celeron + 2GB RAM + 2GB swap)  
   - Result: Model ran successfully but search latency was high  
 - **To-Do:**  
   - Test on Raspberry Pi *(not done yet)*
