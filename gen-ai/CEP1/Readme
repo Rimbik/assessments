@@ -39,8 +39,3 @@ References
 Future Work
 
 - Testing on a Raspberry Pi (not done yet)
-gradio hosting: the huggingface @ this moment not configured to run the offline setup - hence live url not possible at this hr.
-
-Other ref used: ollama, LMStudio along with main llama.cpp linux reference
-inf by: https://github.com/Rimbik/ai-nextGen/blob/main/genai/Llama/Llama_Offline.md
-=================================================================================================================    
