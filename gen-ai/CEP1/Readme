@@ -1,40 +1,44 @@
-🔍 Model Overview :
+Here's a beautified version of your text in Markdown format:
 
-    Type: Llama-3-8B
-    Name: EdgerunnersArchive-Llama-3-8B-Instruct-ortho-baukit-toxic-v2-Q2_K.gguf    
-    Base Model: Meta Llama 3 8B Instruct
-    Base requirement: 2-bit Q2_K: 3.03 GB (3031.86 MB) to run
-    Usage: version 3, with 8 billion parameters.
-    Other version: Available with Q3_K_S, Q3_K_L, Q5_K_S ranging 2 to 8 bit models
+Model Overview
 
-    Fine-Tuning: Enhanced by EdgerunnersArchive with "ortho-baukit-toxic-v2" adjustments
+- *Type*: Llama-3-8B
+- *Name*: EdgerunnersArchive-Llama-3-8B-Instruct-ortho-baukit-toxic-v2-Q2_K.gguf
+- *Base Model*: Meta Llama 3 8B Instruct
+- *Requirement*: 2-bit Q2_K, 3.03 GB (3031.86 MB) to run
+- *Usage*: Version 3, with 8 billion parameters
+- *Other Versions*: Available with Q3_K_S, Q3_K_L, Q5_K_S ranging 2 to 8 bit models
+- *Fine-Tuning*: Enhanced by EdgerunnersArchive with "ortho-baukit-toxic-v2" adjustments
+- *Quantization*: Q2_K (K-quants), offering a balance between model size and performance
+- *File Size*: Approximately 3.18 GB after download
+- *License*: CC BY-NC 4.0 (non-commercial use)
 
-    Quantization: Q2_K (K-quants), offering a balance between model size and performance
+Technical Details
 
-    File Size: Approximately 3.18 GB afrer download
+- *Quantization Type*: Q2_K is a lower-bit quantization, resulting in a smaller model size but potentially reduced performance compared to higher-bit quantizations.
+- *Performance*: While Q2_K offers a compact model size, it may exhibit lower performance and quality compared to higher-bit quantizations like Q4_K or Q5_K.
+- *Usage*: Suitable for environments with limited resources where model size is a critical factor.
 
-    License: CC BY-NC 4.0 (non-commercial use)
-    Hugging Face+3Toolify+3Hugging Face+3
-    Hugging Face+1Toolify+1
-    Hugging Face+3Hugging Face+3Hugging Face+3
+Experimental Setup
 
-⚙️ Technical Details
+- *Machine 1*: High-powered Ryzen i7 Mini PC with 32 GB RAM (used for Q4_K model)
+- *Machine 2*: Low-powered Linux Celeron machine with 2 GB RAM (used for Q2_K model)
 
-    Quantization Type: Q2_K is a lower-bit quantization, resulting in a smaller model size but potentially reduced performance compared to higher-bit quantizations.
-    Performance: While Q2_K offers a compact model size, it may exhibit lower performance and quality compared to higher-bit quantizations like Q4_K or Q5_K.
-    Usage: Suitable for environments with limited resources where model size is a critical factor.
-    In this case, I have used this as experimental purpose to run on a low powered Linux celeron machine with 2GB RAM to test the model Edge capabilities.
+Results
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------
+- The Q2_K model ran successfully on the low-powered Linux Celeron machine with 2 GB RAM + 2 GB swap, but search took a significant amount of time.
+- Gradio hosting on Hugging Face not configured for offline setup, hence live URL not possible at this moment.
 
-First the llama.cpp has been downloaded form github to built in the linux machine, then the same model with Q4_k has been used to code the script on a High powred Ryzen i7 Mini PC with 32 GB RAM
-Next, to experiment its Q2_k model/ quantized version, a different linux machine has been used with: Linux Mint Celeron Processor and 2 GB RAM to test its edge capability and the model worked.
-Todo: Testing on a Rasberi Pi (not done yet)
-    
-    Since building and compiling the app in edge devices is very time consuming, for edge devices the binary of llama.cpp has be used instead of full fledged compilation
-    but llama-cpp-python has been fully compiled in the edge devices as seens binary not available.
-    Finally: The Q2_k model ran under its 2GB ram + 2Gb swap as tested but search taking a significant long time.
+References
 
+- [Llama.cpp GitHub Repository]((link unavailable))
+- [LMStudio]((link unavailable))
+- [Ollama]((link unavailable))
+- [Llama Offline Setup Guide]((link unavailable))
+
+Future Work
+
+- Testing on a Raspberry Pi (not done yet)
 gradio hosting: the huggingface @ this moment not configured to run the offline setup - hence live url not possible at this hr.
 
 Other ref used: ollama, LMStudio along with main llama.cpp linux reference
