@@ -75,7 +75,7 @@ Ran inference on the saved `.pt` model to achieve:
 📂 The entire codebase is available publicly on GitHub for:
 - Easier access
 - Further learning and experimentation
-https://share.google/3utGs1ony28NbJcVP
+https://github.com/Rimbik/assessments/blob/main/gen-ai/capstone1/autonomousCar/Code/Part1/autonomouisCar_july6.ipynb
 ---
 
 ## Project Directory Structure
