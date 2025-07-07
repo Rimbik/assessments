@@ -6,7 +6,7 @@
 [the doc can be read in conjunction with ref: https://github.com/Rimbik/ai/blob/main/capStoneToSubmit_AC/capstoneReadmeVD.pdf]
 
 For Tesla autonomous vehicle detection, building a self-made CNN-based model from scratch is extremely challenging.  
-The **first challenge** is object identification—determining **whether an object is a vehicle or not** is itself a major hurdle.  
+The **first challenge** is object identification—determining **whether an object is a vehicle or not** is itself a major hurdle. Even if - if you read the part2 dataset for all accident case, will see the tesla did hit pedestrian, cyclist and even an innocent 🌴 tree. So its at this point not only vehicle.
 Then comes the challenge of identifying the **type** and **number of vehicles**.
 
 Given the objective and the annotation `.csv` provided with the assignment, the approach chosen was:
