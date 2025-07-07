@@ -101,4 +101,8 @@ multifiles/
 │   ├── Images.part2.rar
 │   └── Images.part*.rar
 ```
+-----
+The above is based on google colab code, a linux based repo will be shared shortly that runs on local machine with local resources using BSD xml annotation.
+
+Thank you for reading.
 eol
