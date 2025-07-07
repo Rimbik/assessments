@@ -101,3 +101,4 @@ multifiles/
 │   ├── Images.part2.rar
 │   └── Images.part*.rar
 ```
+eol
